@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+ <header class="d-flex justify-content-between align-items-center py-3">
+         <div class="logo">
+             <h1>abdulrehmanriaz</h1>
+         </div>
+
+         <button id="theme-toggle" class="btn btn-theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+         </button>
+
+         <nav id="nav-bar" class="d-md">
+           <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="">Home </a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+           </ul>
+         </nav>
+
+          <span class="Side-nav" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+  </header>
+
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+          </div>
+
+      <div id="welcome" class="py text-center">
+          <h3>Welcome to My Portfolio</h3>
+      </div>
+
+  <section id="about" class="py-5">
+     <div id="particles-js"></div>
+        <div class="container">
+           <div class="row">
+
+                <div class="col-md-6 order-md-2">
+                    <div class="about-me">
+                    <div class="about-image">
+                    <img src="images/abdul.png" alt="Image" class="img-fluid">
+                    </div>
+                    </div>
+                </div>
+
+    <div class="col-md-6 order-md-1">
+            <div class="about-me">
+                  <div class="about-details">
+
+                      <div class="about-text">
+                            <p>I am</p>
+                            <h2>Abdul Rehman Riaz</h2>
+                            <span><p class="animated-text"></p></span>
+                      </div>
+
+                      <div class="about-description">
+                            <p>I am a professional web and app developer as well as an SEO Expert and Digital Marketer. I have experience in creating responsive web and mobile applications, ranking websites through SEO, and helping clients grow their business through Digital Marketing.</p>
+                      </div>
+
+                      <div class="about-button mb-3">
+                            <a href="images/abdul-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" download>Resume</a>
+                      </div>
+
+                      <div class="about-social-media text-center">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/abdul.rehmanriaz.3975?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li> 
+                      <li class="list-inline-item"><a href="https://instagram.com/abdul_rehman_.riaz?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://twitter.com/Abdul_rehmanrk?t=TZAkL_BpSa9tiOCgfivtQw&s=09"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/abdulrehmanriaz/"><i class="fab fa-linkedin"></i></a></li>
+                      <li class="list-inline-item"><a href="https://github.com/AbdulRehmanRiaz"><i class="fab fa-github"></i></a></li>
+                      </ul>
+                  </div>
+
+                 </div>
+             </div>
+          </div>   
+       </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+      <div class="container">
+          <h2 class="text">Skills</h2>
+            <div class="row">
+              <div class="col-md-6">
+
+                <div class="skill active">
+                     <h3>Digital Marketing</h3>
+                     <div class="progress">
+                     <div class="progress-bar" style="--progress-width: 90%"></div>
+                     </div>
+                 </div>
+        
+                 <div class="skill active">
+                     <h3>Search Engine Optimization</h3>
+                     <div class="progress">
+                     <div class="progress-bar" style="--progress-width: 80%"></div>
+                     </div>
+                 </div>
+        
+                 <div class="skill active">
+                     <h3>HTML, CSS, JavaScript</h3>
+                     <div class="progress">
+                     <div class="progress-bar" style="--progress-width: 85%"></div>
+                    </div>
+                </div>
+          </div>
+      
+          <div class="col-md-6">
+
+                <div class="skill active">
+                    <h3>WordPress</h3>
+                    <div class="progress">
+                    <div class="progress-bar" style="--progress-width: 75%"></div>
+                    </div>
+                </div>
+        
+                <div class="skill active">
+                    <h3>Flutter</h3>
+                    <div class="progress">
+                    <div class="progress-bar" style="--progress-width: 70%"></div>
+                    </div>
+                </div>
+        
+                <div class="skill active">
+                    <h3>Databases</h3>
+                    <div class="progress">
+                    <div class="progress-bar" style="--progress-width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="services" class="py-5">
+      <div class="container">
+        <h2>Services</h2>
+          <div class="row">
+
+                <div class="col-md-3">
+                    <div class="service active text-center">
+                    <img src="images/digital-marketing.jpg" alt="Digital Marketing" class="img-fluid">
+                    <h3>Digital Marketing</h3>
+                    <p>I provide digital marketing services to help businesses increase their online presence and reach their target audience.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="service active text-center">
+                    <img src="images/seo.jpg" alt="SEO" class="img-fluid">
+                    <h3>SEO</h3>
+                    <p>I specialize in search engine optimization (SEO) techniques to improve website visibility and organic search rankings.</p>
+                    </div>
+                 </div>
+
+                 <div class="col-md-3">
+                     <div class="service active text-center">
+                     <img src="images/web-dev.jpg" alt="Web Development" class="img-fluid">
+                     <h3>Web Development</h3>
+                     <p>I offer professional web development services to create responsive and user-friendly websites tailored to your needs.</p>
+                     </div>
+                 </div>
+
+                 <div class="col-md-3">
+                     <div class="service active text-center">
+                     <img src="images/app-dev.jpg" alt="App Development" class="img-fluid">
+                     <h3>App Development</h3>
+                     <p>I develop mobile applications for iOS and Android platforms, providing seamless user experiences and high performance.</p>
+                     </div>
+                 </div>
+
+            </div>
+        </div>
+   </section>
+
+   <section id="projects" class="py-5">
+      <div class="container">
+         <h2 class="text">Projects</h2>
+           <div class="row project-container">
+
+                  <div class="row-md-6 project active" onclick="showModal('images/form.PNG')">
+                     <img src="images/form.PNG" alt="Project 1" class="img-fluid">
+                     <h3>Form</h3>
+                  </div>
+
+                  <div class="row-md-6 project active" onclick="showModal('images/portfolio.png')">
+                      <img src="images/portfolio.png" alt="Project 2" class="img-fluid">
+                      <h3>Portfolio</h3>
+                  </div>
+
+                  <div class="row-md-6 project active" onclick="showModal('images/resume.PNG')">
+                      <img src="images/resume.PNG" alt="Project 3" class="img-fluid">
+                      <h3>Resume</h3>
+                  </div>
+
+                  <div class="row-md-6 project active" onclick="showModal('images/ecommerce-site.PNG')">
+                      <img src="images/ecommerce-site.PNG" alt="Project 4" class="img-fluid">
+                      <h3>Ecommerce Site</h3>
+                  </div>
+            </div>
+        </div>
+  </section>
+
+  <div id="imageModal" class="modal">
+      <span class="close" onclick="hideModal()">&times;</span>
+          <img src="" class="modal-content" id="modalImage" alt="project-image">
+          </div>
+
+   <section id="recommendations" class="py-5">
+       <div class="container">
+          <h2 class="text">Recommendations</h2>
+            <div class="row recommendation-container">
+
+                  <div class="col-md-6 col-lg-4 recommendation active">
+                      <img src="images/talal.jpg" alt="Avatar 1" class="img-fluid rounded-circle">
+                      <h3>Talal</h3>
+                      <p>"I will recommed Abdul Rehman because of his amazing work. I had a good experience working with him on Web and App Development"</p>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 recommendation active">
+                      <img src="images/zain.jpg" alt="Avatar 2" class="img-fluid rounded-circle">
+                      <h3>Zain</h3>
+                      <p>"Abdul Rehman is good in SEO and Digital Marketing. He worked for me in my agency Atz Solution. He helped me to rank our site"</p>
+                  </div>
+            </div>
+        </div>
+   </section>
+
+  <section id="contact" class="py-5">
+     <div class="container">
+        <h2 class="text">Contact</h2>
+          <div class="contact-form">
+             <form>
+
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                  </div>
+
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+          </form>
+        </div>
+     </div>
+   </section>
+
+
+   <footer class="py-4">
+     <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+
+                  <div class="contact-details">
+                      <h3>Contact Details</h3>
+                      <p><i class="fas fa-map-marker-alt"></i> Location: Multan, Punjab, Pakistan</p>
+                      <p><i class="fas fa-phone"></i> Phone: +92 306 7797650</p>
+                      <p><i class="fas fa-envelope"></i> Email: abdulrehmanrk@gmail.com</p>
+                 </div>
+
+           </div>
+
+           <div class="col-md-6">
+
+                  <div class="social-media">
+                      <h3>Social Media</h3>
+                      <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/abdulrehmanriaz/"><i class="fab fa-linkedin"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                  </div>
+
+            </div>
+         </div>
+      </div>
+   </footer>
+        <script src="particles.js"></script>
+    </div>
+   </body>
+</html>
