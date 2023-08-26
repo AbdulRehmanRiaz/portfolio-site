@@ -500,58 +500,70 @@ color: white;
 }
 
 /* Projects */
-#projects {
-  background-color: white;
-  color:#333333;
-}
-
-.dark-mode #projects{
-  background-color: #47555E;
-}
-.dark-mode #projects h2{
-  color: white;
-}
-.dark-mode .project h3{
-  color: white;
-}
-
-#projects h2 {
-  margin-left: 10px;
-  margin-bottom: 60px;
-}
-
-.project-container {
+.gallery-container {
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
   justify-content: center;
-  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.project {
-  flex-basis: 33.33%;
-  text-align: center;
-  cursor: pointer;
-  height: 100%; 
-  display: flex;
-  background-color: inherit;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project:hover {
-  transform: scale(1.4);
-}
-
-.project img {
+.gallery-image {
+  height: 200px;
   width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 20px;
+  object-fit: cover;
+  display: none;
 }
 
-.project h3 {
+.active {
+  display: block;
+}
+
+.gallery-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery-navigation-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
   font-size: 20px;
-  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    flex-direction: row; /* Stack images horizontally for small screens */
+    align-items: center;
+  }
+
+  .gallery-navigation {
+    flex-direction: row; /* Keep navigation buttons horizontal */
+    justify-content: center;
+  }
+
+  .gallery-image {
+    height: auto; /* Display complete image */
+    width: 100%; /* Adjusted to make images responsive */
+    object-fit: cover; /* Maintain aspect ratio and cover container *//* Initially hide all images */
+  }
+
+  .gallery-navigation-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    display: inline-block; /* Display forward arrow only */
+  }
+
+  .gallery-navigation-button:first-child {
+    transform: none; /* Add this line for back arrow */
+  }
 }
 
 /* Modal */
