@@ -193,33 +193,53 @@
         </div>
    </section>
 
-   <section id="projects" class="py-5">
-      <div class="container">
-         <h2 class="text">Projects</h2>
-           <div class="row project-container">
+  <section id="project-gallery">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="gallery-container">
+      <button class="gallery-navigation-button" onclick="prevImages()">&#10094;</button>
+      <div class="gallery-navigation">
+        <img class="gallery-image active" onclick="showModal('images/form.png')"
+ src="images/form.png" alt="Project Image 1">
+        <img class="gallery-image active" onclick="showModal('images/ecommerce-site.png')"
+ src="images/ecommerce-site.png" alt="Project Image 2">
+        <img class="gallery-image active" onclick="showModal('images/resume.PNG')"
+ src="images/resume.PNG" alt="Project Image 3">
+        <img class="gallery-image active" onclick="showModal('images/portfolio.png')"
+ src="images/portfolio.png" alt="Project Image 4">
+      </div>
+      <button class="gallery-navigation-button" onclick="nextImages()">&#10095;</button>
+    </div>
+  </div>
+</section>
 
-                  <div class="row-md-6 project active" onclick="showModal('images/form.PNG')">
-                     <img src="images/form.PNG" alt="Project 1" class="img-fluid">
-                     <h3>Form</h3>
-                  </div>
+<!-- Add Bootstrap JS and other scripts here -->
+<script>
+  const images = document.querySelectorAll('.gallery-image');
+  let currentIndex = 0;
 
-                  <div class="row-md-6 project active" onclick="showModal('images/portfolio.png')">
-                      <img src="images/portfolio.png" alt="Project 2" class="img-fluid">
-                      <h3>Portfolio</h3>
-                  </div>
+  function showImages() {
+    images.forEach((image, index) => {
+      if (index >= currentIndex && index < currentIndex + 4) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+  }
 
-                  <div class="row-md-6 project active" onclick="showModal('images/resume.PNG')">
-                      <img src="images/resume.PNG" alt="Project 3" class="img-fluid">
-                      <h3>Resume</h3>
-                  </div>
+  showImages();
+  function nextImages() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImages();
+}
 
-                  <div class="row-md-6 project active" onclick="showModal('images/ecommerce-site.PNG')">
-                      <img src="images/ecommerce-site.PNG" alt="Project 4" class="img-fluid">
-                      <h3>Ecommerce Site</h3>
-                  </div>
-            </div>
-        </div>
-  </section>
+function prevImages() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImages();
+}
+</script>
+
 
   <div id="imageModal" class="modal">
       <span class="close" onclick="hideModal()">&times;</span>
